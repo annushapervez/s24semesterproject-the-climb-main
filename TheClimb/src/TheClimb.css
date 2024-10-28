@@ -1,0 +1,486 @@
+/* Import the Ubuntu font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* Set the default font for the entire document */
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* You can also apply the font to specific elements if needed */
+h1, h2, h3, p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #4A4A4A;
+}
+
+label {
+    display: block;
+    font:
+            1rem 'Ubuntu';
+}
+
+input,
+label {
+    margin: 0.4rem 0;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #163F8C;
+    display: flex;
+    align-items: center;
+    color: #ffffff; /* Set the text color, if needed */
+    border: 0px;
+    padding:0px;
+    /*margin-bottom:15px;*/
+    /*position: fixed; !** or absolute, depending on what you are trying to accomplish **!*/
+    top:0;
+    left:0;
+    position: relative;
+    z-index: 5;
+
+
+}
+
+
+.header .page-name{
+    align-content: center;
+    align-items: center;
+    /*display: grid;*/
+    display: none;
+    /*padding: 0 18%;*/
+    margin: auto;
+}
+
+.navigation{
+    background: #D9D9D9;
+    width: 100%;
+    left:0;
+    list-style: none;
+    padding: 0;
+    /*margin: 100px 0 0 0;*/
+    display: flex;
+    /*position: fixed;*/
+    position: relative;
+    z-index: 5;
+
+
+}
+
+
+.navigation a{
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+
+}
+.container {
+    height: 80%;
+    display: contents;
+}
+.logo_image{
+    height: 100%;
+    margin: initial;
+}
+
+.pre-content{
+    display: ruby;
+}
+
+.page-name{
+    align-content: center;
+}
+
+.container img {
+    max-width: 50%;
+    max-height: 75%;
+    height: auto;    /* Maintain the aspect ratio of the image */
+    display: block;  /* Remove any default inline spacing */
+}
+
+.navigation ul{
+    list-style: none;
+    padding: 1% 10%;
+    margin: 0;
+    display: flex; /* Set the display property to flex */
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navigation li{
+    display: block; /* Display list items as horizontal blocks */
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+    /*padding: 20px 20%;*/
+}
+.box{
+    display:block;
+    width:33%;
+    float:left;
+    background:#000;
+    color:#fff;
+    /*margin-left:0.3%;*/
+    text-align:center;
+}
+
+.title-container{
+    max-height: max-content;
+}
+.title{
+    /*max-font-size: ;*/
+    /*min-font-size: ;*/
+    font-size: 70px;
+    padding: 0 20px;
+    min-width: max-content;
+    max-height: 150px;
+    vertical-align: top;
+    display: inline;
+}
+.title a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.imgLink{
+    display: contents;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    position: relative;
+    top: 10%;
+    z-index: 6;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rounded-box-cal {
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    background-color: #e0e0e0; /* Background color of the rounded box */
+    padding: 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between; /* Elements will be spaced evenly */
+    width: max(200px, 20%); /* Set the width of the rounded box */
+    margin:1.5% 5%;
+}
+
+.side-element-cal {
+    flex: 0 0 48%; /* Adjust the width of each side element */
+    /* Add styling for side elements if needed */
+
+}
+.rounded-box-content{
+    border-radius: 20px; /* Adjust the border-radius as needed */
+    background-color: #e0e0e0; /* Background color of the rounded box */
+    padding: 20px; /* Adjust padding as needed */
+    /*display: inline-grid;*/
+    width: 40%;
+    margin: 1% 0%;
+    align-items: baseline;
+    display: block;
+}
+.rounded-box-content.side-element{
+    display: inline;
+
+}
+
+.content{
+    align-items: stretch;
+    justify-content: space-evenly;
+    display: flex;
+}
+.color-title{
+    color: #1A60E7;
+}
+
+
+.accordion{
+    display: none;
+}
+.panel{
+    display: none;
+}
+
+.accordionList {
+    display: none;
+    position: relative;
+    z-index: 5;
+
+
+}
+.modalForms{
+    display: flex;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.formButton{
+    background-color:#d9d9d9;
+    border-radius: 25px;
+    border-style: none;
+    color: #163f8c;
+    font-size: 20px;
+}
+
+.formModal{
+    margin: 0 4%;
+}
+
+.nutrientForm{
+    display: block;
+}
+.nutrientCheckboxes{
+    display: flex;
+}
+.nutrientCheckboxes label {
+    padding: 0 1vw;
+}
+
+.nutrientValue{
+    display: inline-flex;
+}
+.nutrientValues p{
+    margin: 0;
+}
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* add padding to account for vertical scrollbar */
+    padding-right: 20px;
+}
+
+.ui-menu-item-wrapper{
+    font-size: 1rem;
+
+}
+.mealInfo input{
+    font-size: 1vw;
+}
+.calorieForm input{
+    font-size: 2rem;
+}
+
+.dont{
+    display: none;
+}
+.auto-widget input{
+    font-size: 1vw;
+}
+
+.nutrientCheckboxes label{
+    font-size: 2rem;
+}
+
+.nutrientCheckboxes input{
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 981px) {
+    .ui-menu-item-wrapper{
+        font-size: 2rem;
+
+    }
+    .header {
+        width: 100vw;
+        height: 10vh;
+        z-index: 5;
+        position: relative;
+    }
+    .title{
+        /*max-font-size: ;*/
+        /*min-font-size: ;*/
+        font-size: 8vw;
+        /*font-size: 2vw;*/
+        padding: 0 10px;
+        min-width: max-content;
+        max-height: 150px;
+        vertical-align: top;
+        display: inline;
+    }
+    .navigation{
+        display: none;
+    }
+    .accordion {
+        display: flex;
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 15%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        background: url(./assets/dropdownBurgerWhite.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        right: 0;
+        position: absolute;
+    }
+
+
+    .accordionList {
+        list-style: none;
+        padding: 0;
+        width: 100vw;
+        margin: auto;
+        display: block;
+    }
+
+    .accordionItem {
+        /*border: 1px solid #ccc;*/
+        /*margin-bottom: 5px;*/
+        overflow: hidden;
+    }
+
+    .accordionHeader {
+        background-color: #f1f1f1;
+        padding: 0 0 15px 0;
+        cursor: pointer;
+    }
+
+    .accordionContent {
+        display: none;
+        padding: 15px 0 0px 0;
+    }
+
+    .accordionList a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2rem;
+        width: 100%;
+        display: block;
+    }
+    .accordionList li{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .accordionList ul{
+        padding: 0;
+    }
+
+    .navLinks{
+        list-style-type: none;
+        background-color: #163F8C;
+        text-align: center;
+    }
+
+    .pre-content{
+        display: block;
+    }
+
+    .nutrientCheckboxes{
+        /*width: 5%;*/
+        /*height: 5%;*/
+    }
+
+    .modalForms{
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .formModal{
+        margin: auto;
+        align-self: center;
+        padding: 5% 1%;
+    }
+
+    .formButton{
+        font-size: 4vw;
+    }
+
+    .rounded-box-cal{
+        margin: auto;
+        font-size: 3vw;
+        width: 50%;
+    }
+
+
+    .content{
+        display: grid;
+        align-content: center;
+        align-items: center;
+    }
+
+    .rounded-box-content{
+        width: 80vw;
+        display: grid;
+        margin: 10px 0;
+        font-size: 3vw;
+
+    }
+
+    .content ul li div {
+        margin: 0;
+        padding: 0;
+    }
+    .side-element-cal label, input, label{
+        font-size: 3vw;
+    }
+
+    .mealInfo input{
+        font-size: 4vw;
+    }
+
+    .calorieForm input{
+        font-size: 3rem;
+    }
+    .auto-widget input{
+        font-size: 4vw;
+    }
+    .nutrientCheckboxes label{
+        font-size: 3rem;
+    }
+
+    .nutrientCheckboxes input{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nutrientForm #submit{
+        margin-top: 3%;
+        font-size: 3rem;
+    }
+}
